@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/login.css">
+    <title>LOG IN</title>
+</head>
+<body>
+    
+    <!-- Login start  -->
+    <div class="login-wrapper">
+        <div class="login__title-wrapper">
+            <h2 class="login__title">CRUD OPERATIONS</h2>
+        </div>
+
+        <div class="login__text-wrapper">
+            <strong class="login__sign">SIGN IN</strong>
+            <p class="login__text">Enter your credentials to access your account</p>
+        </div>
+
+        <form class="site-form">
+            <label class="form-label">
+                <span class="form-text">Email</span>
+                <input class="form-input" type="email" placeholder="Enter your email" autocomplete="off" required name="userEmail">
+            </label>
+            <label class="form-label">
+                <span class="form-text">Password</span>
+                <input class="form-input" type="password" placeholder="Enter your password" autocomplete="off" required name="userPassword">
+            </label>
+            <button class="form-button">SIGN IN</button>
+        </form>
+    </div>
+    <!-- Login end  -->
+
+    <!-- Modal start  -->
+    <div id="modal-wrapper" class="modal-wrapper">
+        <div class="modal"></div>
+    </div>
+    <!-- Modal end  -->
+
+</body>
+<script src="./js/login.js"></script>
+</html>

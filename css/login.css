@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Montserrat', sans-serif;
+    src: url('../fonts/Montserrat-Bold.woff2') format('woff2'),
+        url('../fonts/Montserrat-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat', sans-serif;
+    src: url('../fonts/Montserrat-SemiBold.woff2') format('woff2'),
+        url('../fonts/Montserrat-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat', sans-serif;
+    src: url('../fonts/Montserrat-Medium.woff2') format('woff2'),
+        url('../fonts/Montserrat-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat', sans-serif;
+    src: url('../fonts/Montserrat-Regular.woff2') format('woff2'),
+        url('../fonts/Montserrat-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.modal-wrapper {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    backdrop-filter: blur(10px);
+    display: none;
+    border-radius: 20px;
+    z-index: 50;
+}
+
+.modal {
+    width: 60%;
+    margin: 150px auto;
+    padding: 40px;
+    background-color: rgb(248, 248, 248);
+    border-radius: 35px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.open-modal {
+    display: block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    backdrop-filter: blur(10px);
+}
+
+
+
+body {
+    background: linear-gradient(71.17deg, #FEAF00 19.35%, #F8D442 90.12%);
+    font-family: "Montserrat", sans-serif;
+    overflow-y: hidden;
+}
+
+.login-wrapper {
+    margin: 25px auto;
+    width: 475px;
+    padding: 35px 30px 70px;
+    border-radius: 20px;
+    box-shadow: 2px 5px 10px 0px rgba(0, 0, 0, 0.1);
+    background: rgb(255, 255, 255);
+}
+
+.login__title-wrapper {
+    margin-bottom: 35px;
+    text-align: center;
+    position: relative;
+}
+
+.login__title-wrapper::before {
+    content: "";
+    position: absolute;
+    left: 9%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 6px;
+    height: 90%;
+    background-color: rgb(248, 212, 66);
+}
+
+
+.login__title {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39px;
+}
+
+.login__text-wrapper {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.login__sign {
+    margin-bottom: 9px;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 27px;
+    letter-spacing: 0%;
+}
+
+.login__text {
+    color: rgb(108, 108, 108);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+}
+
+.site-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.form-label {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-text {
+    color: rgb(108, 108, 108);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+}
+
+.form-input {
+    box-sizing: border-box;
+    border: 1px solid rgb(229, 229, 229);
+    border-radius: 4px;
+    padding: 14px;
+    outline: none;
+
+    &&::placeholder {
+        color: rgb(205, 205, 205);
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 15px;
+    }
+
+    &&:focus {
+        border: 1px solid rgb(216, 183, 51);
+    }
+}
+
+.form-button {
+    border-radius: 4px;
+    background: rgb(254, 175, 0);
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    padding: 13px;
+    border: none;
+    cursor: pointer;
+
+    &&:hover {
+        opacity: 0.8;
+    }
+}
+
+.confirm-login-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+
+.confirm-login-wrapper > h2 {
+    color: rgb(254, 175, 0);
+}
+
+.confirm-login-wrapper > button {
+    width: 30%;
+    margin: 0 auto;
+    padding: 10px 0;
+    color: white;
+    background-color: #bc9600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &&:hover {
+        opacity: 0.8;
+    }
+}
+
+.warning-icon {
+    margin: 0 auto;
+}
+
+.close-icon {
+    position: absolute;
+    top: 160px;
+    right: 260px;
+    cursor: pointer;
+}

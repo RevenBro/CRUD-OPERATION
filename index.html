@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>CRUD OPERATIONS</title>
+</head>
+<body>
+    
+    <div class="site-wrapper">
+        <div class="container">
+            <div class="content-wrapper">
+                <div class="left-content">
+                    <div class="title-wrapper">
+                        <h2 class="title">CRUD OPERATIONS</h2>
+                    </div>
+
+                    <div class="info-wrapper">
+                        <label>
+                            <img class="info-img" src="./images/person.png" alt="Person" width="110" height="110">
+                            <input class="visually-hidden info-input" type="file">
+                        </label>
+                        <span class="info-name">Abdulloh</span>
+                        <span class="info-admin">Admin</span>
+                    </div>
+                    
+                    <div class="student-container">
+                        <div class="student-wrapper">
+                            <img class="student-icon" src="./images/student.svg" alt="Student" width="20" height="16">
+                            <a class="student-text" href="#">Students</a>
+                        </div>
+                    </div>
+
+                    <div id="logout" class="logout-wrapper">
+                        <span class="logout-text">Logout</span>
+                        <img class="logout-img" src="./images/logout.svg" alt="Logout icon" width="17" height="17">
+                    </div>
+                </div>
+        
+                <div class="right-content">
+                    <div class="right-top-content">
+                        <img src="./images/back.svg" alt="Back icon" width="17" height="17">
+                        <div class="search-wrapper">
+                            <div class="search-box">
+                                <input class="search-input" placeholder="Search..." autocomplete="off" type="text" name="userSearch">
+                                <img class="search-icon" src="./images/search.svg" alt="Search" width="14" height="14">
+                            </div>
+                            <img src="./images/notification.svg" alt="notification" width="17" height="20">
+                        </div>
+                    </div>
+
+                    <div class="right-main-content">
+                        <div class="main-top">
+                            <h3 class="main-top-title">Students List</h3>
+                            <div class="main-top-right">
+                                <button class="sort-click">
+                                    <img class="sort-click-img" src="./images/sort.svg" alt="sort by name" width="14" height="22">
+                                </button>
+                                <button class="add-student">ADD NEW STUDENT</button>
+                            </div>
+                        </div>
+                        <hr class="hr">
+
+                        <div class="table-container">
+                            <table class="site-table">
+                                <thead class="table-head">
+                                    <tr class="table-row">
+                                        <th class="table-head-data">Picture</th>
+                                        <th class="table-head-data">Name</th>
+                                        <th class="table-head-data">Email</th>
+                                        <th class="table-head-data">Phone</th>
+                                        <th class="table-head-data">Enroll Number</th>
+                                        <th class="table-head-data">Date admission</th>
+                                        <th class="table-head-data">Event</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="table-body">
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-wrapper" id="modal-wrapper">
+        <div class="modal"></div>
+    </div>
+
+</body>
+<script src="./js/script.js"></script>
+</html>
+
